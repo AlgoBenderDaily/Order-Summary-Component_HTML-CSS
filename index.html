@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nkosinathi" />
+    <meta name="description" content="Order Summary Component" />
+    <title>Order Summary Component</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <main class="main__card">
+      <section class="main__card__hero">
+        <figure>
+          <img
+            src="./images/illustration-hero.svg"
+            alt="illustration-hero"
+            width="450"
+            height="220"
+          />
+          <figcaption class="offscreen">Illustration-hero</figcaption>
+        </figure>
+      </section>
+
+      <section class="main__card__details">
+        <h1 class="details__title center">Order Summary</h1>
+        <p class="details__subtext center">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div class="details__plan">
+          <div class="plan__icon-duration">
+            <div class="icon-duration__icon">
+              <figure>
+                <img
+                  src="./images/icon-music.svg"
+                  alt="icon-music"
+                  width="48"
+                  height="48"
+                />
+                <figcaption class="offscreen">icon-music</figcaption>
+              </figure>
+            </div>
+
+            <div class="icon-duration__duration">
+              <p class="duration__plan nowrap">Annual Plan</p>
+              <p class="duration__value nowrap">&dollar;59.99/year</p>
+            </div>
+          </div>
+
+          <p class="nowrap"><a href="#">Change</a></p>
+        </div>
+      </section>
+
+      <section class="main__card__button">
+        <a id="pay" href="#">
+          <div class="button__payment center nowrap">Proceed to Payment</div>
+        </a>
+
+        <a id="cancel" href="#">
+          <div class="button__Cancel center nowrap">Cancel Order</div>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

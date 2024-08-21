@@ -40,6 +40,10 @@ img {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* || GENERAL STYLES */
 html {
   scroll-behavior: smooth;
@@ -133,6 +137,12 @@ h1 {
 .details__plan a:any-link {
   color: #382ae1;
   font: bold 13px var(--FF);
+  text-decoration: underline 1px #382ae1;
+}
+
+.details__plan :is(a:hover, a:focus-visible) {
+  color: #766cf1;
+  text-decoration: none;
 }
 
 /* || CARD-BUTTON */
@@ -156,10 +166,6 @@ h1 {
 .button__payment:hover,
 .button__payment:focus-visible {
   background-color: #766cf1;
-}
-
-a {
-  text-decoration: none;
 }
 
 #pay:any-link {

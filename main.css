@@ -40,10 +40,6 @@ img {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* || GENERAL STYLES */
 html {
   scroll-behavior: smooth;
@@ -52,7 +48,7 @@ html {
 body {
   background-color: var(--MAIN-BG);
   background-image: url("./images/pattern-background-mobile.svg");
-  background-position: TOP;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: 640px;
   display: grid;
@@ -68,13 +64,17 @@ h1 {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* || CARD */
 .main__card {
   width: 327px;
   height: 587px;
   border-radius: 20px;
   background-color: var(--CARD-BG);
-  box-shadow: 0 40px 40px -20px hsla(228, 87%, 40%, 0.1518);
+  box-shadow: 0px 40px 40px -20px hsla(228, 87%, 40%, 0.1518);
 }
 
 .main__card__hero {
@@ -184,4 +184,67 @@ h1 {
 /* || MEDIA QUERIES */
 /* Desktop/Tablets */
 @media screen and (min-width: 720px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: 100%;
+  }
+
+  /* || CARD */
+  .main__card {
+    width: 450px;
+    height: 697px;
+  }
+
+  .main__card__hero {
+    width: 450px;
+    height: 220px;
+  }
+
+  /* || CARD-DETAILS */
+  .main__card__details {
+    padding: 45px 48px 32px 48px;
+  }
+
+  .details__title {
+    font-size: 28px;
+    margin-bottom: 17px;
+  }
+
+  .details__subtext {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 354px;
+  }
+
+  .details__plan {
+    padding: 25px 24px;
+    gap: 94px;
+    width: 354px;
+    height: 98px;
+  }
+
+  .duration__plan {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+
+  .duration__value {
+    font-size: 16px;
+  }
+
+  .details__plan a:any-link {
+    font-size: 14px;
+  }
+
+  /* || CARD-BUTTON */
+  .main__card__button {
+    padding: 0 48px 48px 48px;
+    gap: 32px;
+  }
+
+  .button__payment {
+    padding: 15px 102px 15px 102px;
+    width: 354px;
+    height: 50px;
+  }
 }
